@@ -1,0 +1,38 @@
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      <h1 class="fw-bolder heading">
+        <img src="../../../assets/icons/logo.png" alt="">
+        <span class="ms-3 fw-bolder">SEVA</span>DEEP
+      </h1>
+      <p class="fst-italic">Connecting Donors With NGOs</p>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row justify-content-center pt-5">
+    <div class="col-lg-6 col-sm-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <form (submit)="onLogin()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

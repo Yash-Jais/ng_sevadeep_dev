@@ -1,0 +1,29 @@
+.ngoSearch{
+  background-color: #1d3449;
+  border-radius: 50px;
+}
+.ngoSearch input::placeholder{
+  color: #fff!important;
+}
+.citySearch .form-select{
+  border-bottom: 1px solid #ccc!important;
+  height: 50px;
+}
+.container>.row:first-child,.container>.row:last-child{
+  margin: 5em 0;
+}
+.page-link{
+  border: 0;
+}
+#more {display: none;}
+.ngoCards .card{
+  box-shadow: 5px 5px 10px #ccc;
+}
+table strong{
+  padding: 0;
+}
+@media screen and (max-width: 575.98px){
+  .container>.row:first-child,.container>.row:last-child{
+    margin: 1em 0 0;
+  }
+}

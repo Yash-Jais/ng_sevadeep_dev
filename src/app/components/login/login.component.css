@@ -1,0 +1,12 @@
+.heading{
+  color: #f27921;
+  letter-spacing: 2px;
+  font-family: "raleway";
+}
+.heading span{
+  color: #b82029;
+  font-family: "raleway";
+}
+.row{
+  height: calc(100vh - 130px);
+}

@@ -1,0 +1,33 @@
+.navbar{
+  background-color: #fff;
+
+}
+.navbar-nav .nav-item:nth-child(2) .nav-link::after{
+  content: "hello";
+}
+.navbar-nav .nav-item a{
+  color: #000000!important;
+  font-weight: 500;
+}
+.navbar-nav .nav-item a.active{
+  background-color: #f27921;
+  border-radius: 3px;
+  color: #fff!important;
+}
+.heading{
+  color: #f27921;
+  letter-spacing: 2px;
+  font-family: "raleway";
+}
+.heading span{
+  color: #b82029;
+  font-family: "raleway";
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  font-size: 28px;
+  margin-top: -8px;
+  color: #000;
+}
+.navbar-brand .fst-italic{
+  font-size: calc(0.6em + 0.7vw);
+}

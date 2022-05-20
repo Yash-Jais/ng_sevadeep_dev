@@ -1,0 +1,332 @@
+<app-header></app-header>
+
+<div class="container">
+  <!-- Filter Searches -->
+  <div class="row">
+    <div class="col-lg-6 col-md-4">
+      <form (submit)="onSubmit()" id="ngoSubmit">
+        <div class="input-group mb-3 ngoSearch">
+          <span class="input-group-text bg-transparent border-0"><img src="../../../assets/icons/search_icon.png"
+              alt="Search Icon"></span>
+          <input type="search" class="form-control bg-transparent border-0 text-white" id="Search"
+            placeholder="Search by NGO" aria-label="Username" aria-describedby="Search">
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <form (submit)="onSubmit()" id="citySubmit">
+        <div class="input-group mb-3 citySearch">
+          <span class="input-group-text bg-transparent border-0"><img src="../../../assets/icons/location-_icon.png"
+              alt="Search Icon"></span>
+          <select class="form-select border-0" aria-label="Default select example">
+            <option selected disabled>City</option>
+            <option value="1">Pune</option>
+            <option value="2">Nagpur</option>
+            <option value="3">Mumbai</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <form (submit)="onSubmit()" id="needSubmit">
+        <div class="input-group mb-3 citySearch">
+          <span class="input-group-text bg-transparent border-0"><img src="../../../assets/icons/need_icon.png"
+              alt="Search Icon"></span>
+          <select class="form-select border-0" aria-label="Default select example">
+            <option selected disabled>Need</option>
+            <option value="1">Kidney</option>
+            <option value="2">Teeth</option>
+            <option value="3">Toung</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- ./Filter Searches -->
+
+  <!-- NGOs -->
+  <div class="row ngoCards">
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Sangharsh New Delhi</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/chair.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Furniture Chair</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>12</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Society for service to Voluntary agencies</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/sewing machine.png" alt="sewing machine" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Sewing Machine</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>12</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Organisation for Helpless</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/fridge.png" alt="Fridge" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Home Appliances Refriger</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>02</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Jeevitha Anathashram</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/bowl.png" alt="Bowl" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Utensils Serving Bowls</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>30</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Bliss House Hydrabad</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/grocery.png" alt="Grocery" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Grocery Items</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>30</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 my-4 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="../../../assets/icons/ngo_icon.png" alt="NGO icon" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <h6>Jeevitha Anathashram</h6>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <img src="../../../assets/img/sports.png" alt="Sports" class="w-100">
+            </div>
+            <div class="col ps-0">
+              <table class="table table-borderless">
+                <tr>
+                  <td style="width: 8%;"><span class="badge bg-secondary rounded-pill me-3">Need</span></td>
+                  <td><strong>Sports Equipments</strong></td>
+                </tr>
+                <tr>
+                  <td class="ps-1"><span class="badge bg-secondary rounded-pill me-3">Qty.</span></td>
+                  <td><strong>20</strong></td>
+                </tr>
+              </table>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<span id="dots">...</span><span
+                  id="more">erisque enim ligula venenatis
+                  dolor.</span><button onclick="myFunction()" id="myBtn"
+                  class="btn btn-link text-danger text-decoration-none p-0">Read More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./NGOs -->
+
+  <!-- Pagination -->
+  <div class="row pb-5">
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link"><span aria-hidden="true" class="me-3 d-none d-md-inline-block">&laquo;</span> Previous</a>
+      </li>
+      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">94</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next <span aria-hidden="true"
+            class="ms-3 d-none d-md-inline-block">&raquo;</span></a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- ./Pagination -->
+</div>
